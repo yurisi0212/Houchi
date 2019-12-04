@@ -1,0 +1,7 @@
+name: Houchi
+main: yurisi\main
+version: 1.0
+api: [1.0.0,2.0.0,3.0.0]
+load: POSTWORLD
+author: yurisi
+description: houchisiyouze
