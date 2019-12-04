@@ -19,6 +19,7 @@ class SendTask extends Task{
 			$this->Main->time[$name]++;
 			if ($this->Main->time[$name] == 300) {
 				$player->setNameTag("[放置中]".$name);
+				$this->Main->getServer()->broadcastTip("[{$this->Main->plugin}]{$name}が放置を開始しました。");
 		   	}
 		}
 
