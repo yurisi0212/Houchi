@@ -4,4 +4,10 @@
 
 二次配布禁止。 
 
+### コマンド 
+
+/houchi : 放置を開始します。 
+
+
+
 バグを見つけたらhttps://homepage.yurisi.spaceまで
