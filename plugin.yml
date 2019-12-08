@@ -5,3 +5,7 @@ api: [1.0.0,2.0.0,3.0.0]
 load: POSTWORLD
 author: yurisi
 description: houchisiyouze
+commands:
+ houchi:
+  usage:
+  description: "放置する"

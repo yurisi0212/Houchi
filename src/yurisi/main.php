@@ -39,9 +39,11 @@ class main extends PluginBase implements Listener {
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 		switch ($command->getName()) {
 			case "houchi":
-				$this->time[$sender->getName()]=300;
+				$this->time[$sender->getName()]=299;
+				return true;
 			break;
 		}
+	return true;
 	}
 
 	public function onMove(PlayerMoveEvent $event){
@@ -49,8 +51,8 @@ class main extends PluginBase implements Listener {
 		$name=$player->getName();
 		if($this->time[$name] > 300){
 			$player->setNameTag($name);
+			$this->getServer()->broadcastTip("[{$this->plugin}]{$name}が放置をやめました");
 		}
-		$this->getServer()->broadcastTip("[{$this->plugin}]{$name}が放置をやめました");
 		$this->time[$name]=0;
 
 	}
